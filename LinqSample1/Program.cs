@@ -19,15 +19,19 @@ namespace LinqSample1
             };
 
             var selectQuery = (from emp in employees
-                              select new Employee()
+                              select new Student()
                               {
-                                  Id=emp.Id,
-                                  Email=emp.Email
+                                  StudentId=emp.Id,
+                                  StEmail=emp.Email,
+                                  FullName=emp.Name
+                                  
+
                               }).ToList();
 
-            foreach (var item in selectQuery)
+            foreach (var item 
+                in selectQuery)
             {
-                Console.WriteLine($"Id={item.Id}, Email={item.Email}");
+                Console.WriteLine($"Id={item.StudentId}, Email={item.StudentId}, Fullname={item.FullName}");
 
             }
 
