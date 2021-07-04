@@ -52,6 +52,18 @@ namespace LinqSample1
 
             }
 
+            Console.WriteLine("---------------------------------------------------------");
+
+
+            var basicPropMethod = employees.Select(emp => emp.Id).ToList();
+
+            foreach (var item in basicPropMethod)
+            {
+                Console.WriteLine($"Id={item}");
+
+            }
+
+
 
         }
     }
