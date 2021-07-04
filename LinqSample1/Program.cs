@@ -42,7 +42,7 @@ namespace LinqSample1
            */
 
 
-            List<int> list = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            //List<int> list = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
             List<Employee> employees = new List<Employee>()
             {
@@ -50,10 +50,16 @@ namespace LinqSample1
                 new Employee(){Id=2, Name="Raihan 2"},
             };
 
-            IEnumerable<Employee> query = from emp in employees
-                                          where emp.Id == 1
-                                          select emp;
-            foreach (var item in query)
+
+
+            //IEnumerable<Employee> query = from emp in employees
+            //                              where emp.Id == 1
+            //                              select emp;
+
+            IQueryable<Employee> query1 = employees.AsQueryable().Where(x => x.Id == 1);
+
+
+            foreach (var item in query1)
             {
                 Console.WriteLine("Id= " + item.Id  +"  and Name= " +item.Name);
             }
