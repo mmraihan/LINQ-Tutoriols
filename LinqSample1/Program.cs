@@ -8,8 +8,9 @@ namespace LinqSample1
     {
         static void Main(string[] args)
         {
+            /*
             //////////////////////////   1. Query syntex  ///////////////////////////
-            
+
             List<int> list = new List<int>() { 1, 2, 3, 4, 5, 6, 7,8,9,10 }; //Data source
 
             var querySyntax = from obj in list  // Query
@@ -38,10 +39,33 @@ namespace LinqSample1
 
             ////////////////////////// 3. Mix Syntex  //////////////////////////
 
+           */
 
 
+            List<int> list = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+            List<Employee> employees = new List<Employee>()
+            {
+                new Employee(){Id=1, Name="Raihan"},
+                new Employee(){Id=2, Name="Raihan 2"},
+            };
+
+            IEnumerable<Employee> query = from emp in employees
+                                          where emp.Id == 1
+                                          select emp;
+            foreach (var item in query)
+            {
+                Console.WriteLine("Id= " + item.Id  +"  and Name= " +item.Name);
+            }
+
+        
+        }
 
 
+        public class Employee
+        {
+            public int Id { get; set; }
+            public string Name { get; set; }
         }
     }
 }
