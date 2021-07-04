@@ -8,70 +8,51 @@ namespace LinqSample1
     {
         static void Main(string[] args)
         {
-            /*
-            //////////////////////////   1. Query syntex  ///////////////////////////
-
-            List<int> list = new List<int>() { 1, 2, 3, 4, 5, 6, 7,8,9,10 }; //Data source
-
-            var querySyntax = from obj in list  // Query
-                             where obj > 2
-                             select obj;
-
-            foreach (var item in querySyntax) // Execution
-            {
-                Console.WriteLine(item);
-            }
-            Console.WriteLine("---------------------------------------------------------");
-
-
-
-
-            ////////////////////////// 2. Method Syntex  //////////////////////////
-
-            var methodSyntax = list.Where(obj => obj > 2); // Query
-            foreach (var item in methodSyntax) // Execution
-            {
-                Console.WriteLine(item);
-            }
-
-            Console.WriteLine("---------------------------------------------------------");
-
-
-            ////////////////////////// 3. Mix Syntex  //////////////////////////
-
-           */
-
-
-            //List<int> list = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
             List<Employee> employees = new List<Employee>()
             {
-                new Employee(){Id=1, Name="Raihan"},
-                new Employee(){Id=2, Name="Raihan 2"},
+                new Employee(){Id=1, Name= "Raihan", Email="admin@exaple.com"},
+                new Employee(){Id=2, Name= "Raihan2", Email="admin@exaple.com"},
+                new Employee(){Id=3, Name= "Raihan3", Email="admin@exaple.com"},
+                new Employee(){Id=4, Name= "Raihan4", Email="admin@exaple.com"},
+                new Employee(){Id=5, Name= "Raihan5", Email="admin@exaple.com"}
             };
 
 
+            /////////////////////////////1. Basic Query/////////////////////////
+            var basicQuery = (from emp in employees
+                             select emp).ToList();
 
-            //IEnumerable<Employee> query = from emp in employees
-            //                              where emp.Id == 1
-            //                              select emp;
-
-            IQueryable<Employee> query1 = employees.AsQueryable().Where(x => x.Id == 1);
-
-
-            foreach (var item in query1)
+            foreach (var item in basicQuery)
             {
-                Console.WriteLine("Id= " + item.Id  +"  and Name= " +item.Name);
+                Console.WriteLine ($"Id={item.Id}, Name={item.Name}, Email= {item.Email}" );
             }
 
-        
-        }
+            Console.WriteLine("---------------------------------------------------------");
+
+            /////////////////////////////2. Basic Method/////////////////////////
+
+            var basicMethod = employees.ToList();
+            foreach (var item in basicMethod)
+            {
+                Console.WriteLine($"Basic Method:  Id={item.Id}, Name={item.Name}, Email= {item.Email}");
+
+            }
+            Console.WriteLine("---------------------------------------------------------");
 
 
-        public class Employee
-        {
-            public int Id { get; set; }
-            public string Name { get; set; }
+            /////////////////////////////////////Operations///////////////////////
+            ///
+            var basicPropQuery = (from emp in employees
+                                  select emp.Id).ToList();
+
+            foreach (var item in basicPropQuery)
+            {
+                Console.WriteLine($"Id={item}");
+
+            }
+
+
         }
     }
 }
