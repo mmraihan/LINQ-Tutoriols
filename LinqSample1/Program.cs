@@ -18,30 +18,15 @@ namespace LinqSample1
                 new Employee(){Id=5, Name= "Raihan5", Email="admin@exaple.com"}
             };
 
-            //var selectQuery = (from emp in employees
-            //                  select new Student()
-            //                  {
-            //                      StudentId=emp.Id,
-            //                      StEmail=emp.Email,
-            //                      FullName=emp.Name
-                                  
+            var query = employees.Select((emp, index) => new { Index = index, Name = emp.Name }).ToList();
+            
 
-            //                  }).ToList();
+            //foreach (var item 
+            //    in selectMethod)
+            //{
+            //    Console.WriteLine($"Id={item.StudentId}, Email={item.StudentId}, Fullname={item.FullName}");
 
-
-            var selectMethod = employees.Select(emp => new Student()
-            {
-                StudentId = emp.Id,
-                StEmail = emp.Email,
-                FullName = emp.Name
-            }).ToList();
-
-            foreach (var item 
-                in selectMethod)
-            {
-                Console.WriteLine($"Id={item.StudentId}, Email={item.StudentId}, Fullname={item.FullName}");
-
-            }
+            //}
 
 
 
