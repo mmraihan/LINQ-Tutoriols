@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinqSample1", "LinqSample1\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DifferentWay", "DifferentWay\DifferentWay.csproj", "{6BA39CA0-5404-435C-BAC0-5833DBA1E49E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IEnumarableIQuerable", "IEnumarableIQuerable\IEnumarableIQuerable.csproj", "{5C518CA4-4DF4-41EE-B719-6EB0AFD5D4CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{6BA39CA0-5404-435C-BAC0-5833DBA1E49E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6BA39CA0-5404-435C-BAC0-5833DBA1E49E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6BA39CA0-5404-435C-BAC0-5833DBA1E49E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C518CA4-4DF4-41EE-B719-6EB0AFD5D4CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C518CA4-4DF4-41EE-B719-6EB0AFD5D4CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C518CA4-4DF4-41EE-B719-6EB0AFD5D4CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C518CA4-4DF4-41EE-B719-6EB0AFD5D4CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
