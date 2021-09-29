@@ -5,13 +5,15 @@ VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinqSample1", "LinqSample1\LinqSample1.csproj", "{7D926B3A-0AF2-4F2B-AF67-AFDB63585ED4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DifferentWay", "DifferentWay\DifferentWay.csproj", "{6BA39CA0-5404-435C-BAC0-5833DBA1E49E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DifferentWay", "DifferentWay\DifferentWay.csproj", "{6BA39CA0-5404-435C-BAC0-5833DBA1E49E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IEnumarableIQuerable", "IEnumarableIQuerable\IEnumarableIQuerable.csproj", "{5C518CA4-4DF4-41EE-B719-6EB0AFD5D4CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IEnumarableIQuerable", "IEnumarableIQuerable\IEnumarableIQuerable.csproj", "{5C518CA4-4DF4-41EE-B719-6EB0AFD5D4CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelectMany", "SelectMany\SelectMany.csproj", "{7A288B34-83B0-47C3-B006-82A06BCEF466}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SelectMany", "SelectMany\SelectMany.csproj", "{7A288B34-83B0-47C3-B006-82A06BCEF466}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Where-Operator", "Where-Operator\Where-Operator.csproj", "{F927BCE1-957F-4A79-A65C-390CF0EE40A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Where-Operator", "Where-Operator\Where-Operator.csproj", "{F927BCE1-957F-4A79-A65C-390CF0EE40A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OfType-Operator", "OfType-Operator\OfType-Operator.csproj", "{AF4DE39B-26F4-45D1-B6F7-8A78C6F623FF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{F927BCE1-957F-4A79-A65C-390CF0EE40A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F927BCE1-957F-4A79-A65C-390CF0EE40A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F927BCE1-957F-4A79-A65C-390CF0EE40A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF4DE39B-26F4-45D1-B6F7-8A78C6F623FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF4DE39B-26F4-45D1-B6F7-8A78C6F623FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF4DE39B-26F4-45D1-B6F7-8A78C6F623FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF4DE39B-26F4-45D1-B6F7-8A78C6F623FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

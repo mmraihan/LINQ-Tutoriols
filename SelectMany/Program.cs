@@ -21,6 +21,7 @@ namespace SelectMany
             var methodResult = names.SelectMany(x => x).ToList();
 
 
+
             #endregion
 
             #region Query Syntax

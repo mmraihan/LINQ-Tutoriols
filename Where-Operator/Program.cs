@@ -8,6 +8,8 @@ namespace Where_Operator
     {
         static void Main(string[] args)
         {
+
+            //Filtering operator= 1. Where 2. OfType
             #region Multiple Condition
 
             var dataSourse = new List<int>() { 50,51,54,100,101,102,103,104};
