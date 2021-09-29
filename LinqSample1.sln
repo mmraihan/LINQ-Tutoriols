@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IEnumarableIQuerable", "IEn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelectMany", "SelectMany\SelectMany.csproj", "{7A288B34-83B0-47C3-B006-82A06BCEF466}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Where-Operator", "Where-Operator\Where-Operator.csproj", "{F927BCE1-957F-4A79-A65C-390CF0EE40A7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{7A288B34-83B0-47C3-B006-82A06BCEF466}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A288B34-83B0-47C3-B006-82A06BCEF466}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A288B34-83B0-47C3-B006-82A06BCEF466}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F927BCE1-957F-4A79-A65C-390CF0EE40A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F927BCE1-957F-4A79-A65C-390CF0EE40A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F927BCE1-957F-4A79-A65C-390CF0EE40A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F927BCE1-957F-4A79-A65C-390CF0EE40A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
