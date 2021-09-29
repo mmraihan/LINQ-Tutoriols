@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SelectMany", "SelectMany\Se
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Where-Operator", "Where-Operator\Where-Operator.csproj", "{F927BCE1-957F-4A79-A65C-390CF0EE40A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OfType-Operator", "OfType-Operator\OfType-Operator.csproj", "{AF4DE39B-26F4-45D1-B6F7-8A78C6F623FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OfType-Operator", "OfType-Operator\OfType-Operator.csproj", "{AF4DE39B-26F4-45D1-B6F7-8A78C6F623FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrederBy", "OrederBy\OrederBy.csproj", "{6EE011BA-67A1-407E-A8AE-8049157F5282}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{AF4DE39B-26F4-45D1-B6F7-8A78C6F623FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF4DE39B-26F4-45D1-B6F7-8A78C6F623FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF4DE39B-26F4-45D1-B6F7-8A78C6F623FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EE011BA-67A1-407E-A8AE-8049157F5282}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EE011BA-67A1-407E-A8AE-8049157F5282}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EE011BA-67A1-407E-A8AE-8049157F5282}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EE011BA-67A1-407E-A8AE-8049157F5282}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
