@@ -6,6 +6,7 @@ namespace ThenByAndThenByDescending
 {
     class Program
     {
+        //The ThenBy and ThenByDescending extension methods are used for sorting on multiple fields.
         static void Main(string[] args)
         {
             var dataSource = new List<Employee>()
