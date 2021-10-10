@@ -19,6 +19,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrederBy", "OrederBy\Oreder
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderByDescending", "OrderByDescending\OrderByDescending.csproj", "{BA8C3ED3-3039-49E4-88D4-79FF5E3DD8BE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThenByAndThenByDescending", "ThenByAndThenByDescending\ThenByAndThenByDescending.csproj", "{FE735DBD-0E0E-4540-829F-9812A431C74E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{BA8C3ED3-3039-49E4-88D4-79FF5E3DD8BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA8C3ED3-3039-49E4-88D4-79FF5E3DD8BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA8C3ED3-3039-49E4-88D4-79FF5E3DD8BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE735DBD-0E0E-4540-829F-9812A431C74E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE735DBD-0E0E-4540-829F-9812A431C74E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE735DBD-0E0E-4540-829F-9812A431C74E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE735DBD-0E0E-4540-829F-9812A431C74E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
