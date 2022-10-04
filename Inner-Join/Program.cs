@@ -26,21 +26,24 @@ namespace Inner_Join
                 new Address(){Id=5, AddressLine="Line-5" }
             };
 
-            //var qs = (from student in students
-            //         join address in addresses
-            //         on student.AddressId equals address.Id
-            //         select new
-            //         {
-            //             StudentName = student.Name,
-            //             Address = address.AddressLine
-            //         }).ToList();
-            var qs = (from address  in addresses
-                      join student in students
-                      on address.Id equals student.AddressId
+            var marks = new List<Mark>()
+            {
+                new Mark(){Id=1, StudentId=1,TotalMarks=99},
+                new Mark(){Id=2, StudentId=2,TotalMarks=94},
+                new Mark(){Id=3, StudentId=3,TotalMarks=95},
+            };
+
+            var qs = (from student in students
+                      join address in addresses
+                      on student.AddressId equals address.Id
+
+                      join mark in marks
+                      on student.Id equals mark.StudentId
                       select new
                       {
                           StudentName = student.Name,
-                          Address = address.AddressLine
+                          Address = address.AddressLine,
+                          Totalmarks = mark.TotalMarks
                       }).ToList();
 
 
