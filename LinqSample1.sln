@@ -37,6 +37,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inner-Join", "Inner-Join\In
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Group-Join", "Group-Join\Group-Join.csproj", "{DD29B99E-6936-4456-B9F2-61189B631226}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Left-Join", "Left-Join\Left-Join.csproj", "{6677E69A-DFE0-4ABA-B08D-04168F4F94C6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{DD29B99E-6936-4456-B9F2-61189B631226}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD29B99E-6936-4456-B9F2-61189B631226}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD29B99E-6936-4456-B9F2-61189B631226}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6677E69A-DFE0-4ABA-B08D-04168F4F94C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6677E69A-DFE0-4ABA-B08D-04168F4F94C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6677E69A-DFE0-4ABA-B08D-04168F4F94C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6677E69A-DFE0-4ABA-B08D-04168F4F94C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
